@@ -1,0 +1,14 @@
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\obj\Debug\EmptyProjectNet45_FineUI.csprojResolveAssemblyReference.cache
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\bin\EmptyProjectNet45_FineUI.dll
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\bin\EmptyProjectNet45_FineUI.pdb
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\bin\FineUI.dll
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\bin\Newtonsoft.Json.dll
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\bin\FineUI.xml
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\bin\Newtonsoft.Json.xml
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\obj\Debug\EmptyProjectNet45_FineUI.dll
+E:\Work\Dev\FineUI\EmptyProjectNet45_FineUI\obj\Debug\EmptyProjectNet45_FineUI.pdb
+D:\Dev\201707党建\EmptyProjectNet45_FineUI\bin\EmptyProjectNet45_FineUI.dll
+D:\Dev\201707党建\EmptyProjectNet45_FineUI\bin\EmptyProjectNet45_FineUI.pdb
+D:\Dev\201707党建\EmptyProjectNet45_FineUI\obj\Debug\EmptyProjectNet45_FineUI.csprojResolveAssemblyReference.cache
+D:\Dev\201707党建\EmptyProjectNet45_FineUI\obj\Debug\EmptyProjectNet45_FineUI.dll
+D:\Dev\201707党建\EmptyProjectNet45_FineUI\obj\Debug\EmptyProjectNet45_FineUI.pdb

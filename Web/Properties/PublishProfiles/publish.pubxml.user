@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BLL.dll">
+      <publishTime>10/08/2017 15:46:14</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>10/08/2017 15:38:56</publishTime>
+    </File>
+    <File Include="bin/FineUI.dll">
+      <publishTime>02/05/2017 17:10:36</publishTime>
+    </File>
+    <File Include="bin/FineUIMvc.dll">
+      <publishTime>06/26/2017 17:14:24</publishTime>
+    </File>
+    <File Include="bin/Global.dll">
+      <publishTime>10/08/2017 15:46:13</publishTime>
+    </File>
+    <File Include="bin/Maticsoft.DBUtility.dll">
+      <publishTime>08/06/2009 16:32:22</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>10/08/2017 15:38:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/17/2013 12:49:42</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>11/02/2011 05:32:38</publishTime>
+    </File>
+    <File Include="bin/O2S.Components.PDFRender4NET.dll">
+      <publishTime>06/13/2016 22:10:52</publishTime>
+    </File>
+    <File Include="bin/TStar.Epbms.dll">
+      <publishTime>10/08/2017 15:46:16</publishTime>
+    </File>
+    <File Include="bin/TStar.Utility.DataSource.dll">
+      <publishTime>10/08/2017 15:45:53</publishTime>
+    </File>
+    <File Include="bin/TStar.Utility.dll">
+      <publishTime>10/08/2017 15:45:52</publishTime>
+    </File>
+    <File Include="bin/TStar.Utility.FineUI.dll">
+      <publishTime>10/08/2017 15:45:52</publishTime>
+    </File>
+    <File Include="captcha/captcha.ashx">
+      <publishTime>12/01/2012 23:23:56</publishTime>
+    </File>
+    <File Include="Forget.aspx">
+      <publishTime>09/21/2017 13:07:03</publishTime>
+    </File>
+    <File Include="Frame.aspx">
+      <publishTime>10/08/2017 15:26:21</publishTime>
+    </File>
+    <File Include="Fzgl/Fzdxlb.aspx">
+      <publishTime>10/06/2017 21:10:16</publishTime>
+    </File>
+    <File Include="Fzgl/Jjfzlb.aspx">
+      <publishTime>10/06/2017 21:10:16</publishTime>
+    </File>
+    <File Include="Fzgl/ShowFzlc.aspx">
+      <publishTime>10/07/2017 17:36:06</publishTime>
+    </File>
+    <File Include="Fzgl/Ybdylb.aspx">
+      <publishTime>10/06/2017 21:12:31</publishTime>
+    </File>
+    <File Include="Fzgl/Zsdylb.aspx">
+      <publishTime>10/06/2017 21:11:36</publishTime>
+    </File>
+    <File Include="Handler/GetServerTime.ashx">
+      <publishTime>09/20/2017 20:40:54</publishTime>
+    </File>
+    <File Include="Handler/VerifyCode.ashx">
+      <publishTime>09/20/2017 21:33:35</publishTime>
+    </File>
+    <File Include="Handler/VerifyOrder.ashx">
+      <publishTime>09/20/2017 20:40:54</publishTime>
+    </File>
+    <File Include="Handler/VerifyPhone.ashx">
+      <publishTime>09/20/2017 20:40:54</publishTime>
+    </File>
+    <File Include="Handler/VerifyTicket.ashx">
+      <publishTime>09/20/2017 20:40:54</publishTime>
+    </File>
+    <File Include="Handler/VerifyUser.ashx">
+      <publishTime>09/20/2017 20:40:54</publishTime>
+    </File>
+    <File Include="hello.aspx">
+      <publishTime>08/21/2017 15:32:31</publishTime>
+    </File>
+    <File Include="Jcgl/Bj.aspx">
+      <publishTime>10/09/2017 00:35:02</publishTime>
+    </File>
+    <File Include="Jcgl/BjEdit.aspx">
+      <publishTime>08/28/2017 19:54:42</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>09/21/2017 14:28:09</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>08/21/2017 16:27:58</publishTime>
+    </File>
+    <File Include="Reg.aspx">
+      <publishTime>09/20/2017 22:53:52</publishTime>
+    </File>
+    <File Include="res/css/common.css">
+      <publishTime>10/28/2015 17:50:04</publishTime>
+    </File>
+    <File Include="res/css/default.css">
+      <publishTime>08/29/2017 23:00:22</publishTime>
+    </File>
+    <File Include="res/css/extjs.css">
+      <publishTime>08/29/2017 19:17:04</publishTime>
+    </File>
+    <File Include="res/css/fineui.css">
+      <publishTime>10/07/2017 19:52:50</publishTime>
+    </File>
+    <File Include="res/css/index.css">
+      <publishTime>09/13/2017 17:07:24</publishTime>
+    </File>
+    <File Include="res/css/table.css">
+      <publishTime>08/22/2017 12:38:47</publishTime>
+    </File>
+    <File Include="res/images/logo/Logo.png">
+      <publishTime>08/30/2017 00:13:07</publishTime>
+    </File>
+    <File Include="res/images/nophoto.png">
+      <publishTime>08/28/2017 20:43:06</publishTime>
+    </File>
+    <File Include="res/js/jquery.js">
+      <publishTime>10/17/2016 15:22:24</publishTime>
+    </File>
+    <File Include="res/js/jquery.min.js">
+      <publishTime>10/17/2016 15:22:24</publishTime>
+    </File>
+    <File Include="res/js/JScript.js">
+      <publishTime>10/07/2017 21:08:07</publishTime>
+    </File>
+    <File Include="test.aspx">
+      <publishTime>08/31/2017 00:47:29</publishTime>
+    </File>
+    <File Include="Tjbb/Fzjd.aspx">
+      <publishTime>10/08/2017 15:14:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/08/2017 15:20:10</publishTime>
+    </File>
+    <File Include="Xmdr/Dxpxcx.aspx">
+      <publishTime>10/05/2017 14:17:06</publishTime>
+    </File>
+    <File Include="Xmdr/Dxpxdr.aspx">
+      <publishTime>09/06/2017 20:03:04</publishTime>
+    </File>
+    <File Include="Xmdr/Fzmdcx.aspx">
+      <publishTime>09/19/2017 00:01:43</publishTime>
+    </File>
+    <File Include="Xmdr/Jjfzmdcx.aspx">
+      <publishTime>09/19/2017 00:01:42</publishTime>
+    </File>
+    <File Include="Xmdr/mddr.aspx">
+      <publishTime>09/13/2017 14:38:04</publishTime>
+    </File>
+    <File Include="Xmdr/Nfzmdcx.aspx">
+      <publishTime>09/19/2017 00:01:42</publishTime>
+    </File>
+    <File Include="Xmdr/Xmdr.aspx">
+      <publishTime>09/06/2017 14:17:07</publishTime>
+    </File>
+    <File Include="Xmdr/Xxcjcx.aspx">
+      <publishTime>10/05/2017 18:05:22</publishTime>
+    </File>
+    <File Include="Xmdr/Xxcjdr.aspx">
+      <publishTime>10/05/2017 15:12:01</publishTime>
+    </File>
+    <File Include="Xmdr/Zzmdcx.aspx">
+      <publishTime>09/19/2017 00:01:41</publishTime>
+    </File>
+    <File Include="Xmgl/Jshj.aspx">
+      <publishTime>10/07/2017 21:48:14</publishTime>
+    </File>
+    <File Include="Xmgl/JshjEdit.aspx">
+      <publishTime>09/02/2017 15:14:53</publishTime>
+    </File>
+    <File Include="Xmgl/ShowAttach.aspx">
+      <publishTime>10/07/2017 20:54:09</publishTime>
+    </File>
+    <File Include="Xmgl/Slx.aspx">
+      <publishTime>10/07/2017 21:28:43</publishTime>
+    </File>
+    <File Include="Xmgl/SlxEdit.aspx">
+      <publishTime>09/02/2017 15:44:44</publishTime>
+    </File>
+    <File Include="Xmgl/Sxhb.aspx">
+      <publishTime>10/07/2017 21:29:27</publishTime>
+    </File>
+    <File Include="Xmgl/SxhbEdit.aspx">
+      <publishTime>09/04/2017 20:31:19</publishTime>
+    </File>
+    <File Include="Xmgl/Sxhblbgr.aspx">
+      <publishTime>10/07/2017 21:17:39</publishTime>
+    </File>
+    <File Include="Xmgl/SxhbSh.aspx">
+      <publishTime>10/06/2017 22:34:36</publishTime>
+    </File>
+    <File Include="Xmgl/SxhbShEdit.aspx">
+      <publishTime>09/04/2017 12:59:22</publishTime>
+    </File>
+    <File Include="Xmgl/SxhbShView.aspx">
+      <publishTime>10/06/2017 22:28:57</publishTime>
+    </File>
+    <File Include="Xmgl/SxhbView.aspx">
+      <publishTime>10/07/2017 20:08:56</publishTime>
+    </File>
+    <File Include="Xmgl/Xmsb.aspx">
+      <publishTime>09/03/2017 17:18:26</publishTime>
+    </File>
+    <File Include="Xmgl/XmsbEdit.aspx">
+      <publishTime>09/06/2017 11:02:39</publishTime>
+    </File>
+    <File Include="Xmgl/Zyfw.aspx">
+      <publishTime>10/07/2017 21:28:23</publishTime>
+    </File>
+    <File Include="Xmgl/ZyfwEdit.aspx">
+      <publishTime>09/02/2017 15:26:51</publishTime>
+    </File>
+    <File Include="Xmgl/Zyfwlbgr.aspx">
+      <publishTime>10/07/2017 21:13:59</publishTime>
+    </File>
+    <File Include="Xmgl/ZyfwView.aspx">
+      <publishTime>10/07/2017 21:12:11</publishTime>
+    </File>
+    <File Include="Xtgl/FileUpload.aspx">
+      <publishTime>08/29/2017 17:50:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <TreeNode Text="【1+X】管理" Icon="BookRed">
+    <TreeNode Text="基本信息" NavigateUrl="~/Fzgl/Xslb.aspx" Icon="UserRed"/>
+    <TreeNode Text="思想汇报" NavigateUrl="~/Xmgl/Sxhblb.aspx" Icon="PageWhiteAcrobat"/>
+    <TreeNode Text="志愿服务" NavigateUrl="~/Xmgl/Zyfwlb.aspx" Icon="Heart"/>
+    <TreeNode Text="预审答辩" NavigateUrl="~/Xmgl/Ysdblb.aspx" Icon="ClockRed"/>
+    <TreeNode Text="党员三联系" NavigateUrl="~/Xmgl/Slxlb.aspx" Icon="TelephoneRed"/>
+    <TreeNode Text="作用发挥" Icon="FlagRed">
+      <TreeNode Text="竞赛获奖" NavigateUrl="~/Xmgl/Jshjlb.aspx" Icon="MedalGold1"/>
+      <TreeNode Text="其他项目" NavigateUrl="~/Xmgl/Xmsblb.aspx" Icon="AwardStarGold1"/>
+    </TreeNode>
+  </TreeNode>
+  <TreeNode Text="统计汇总" Icon="ChartBar">
+    <TreeNode Text="总表" NavigateUrl="~/Tjbb/Zbfdw.aspx" Icon="Calendar"/>
+    <TreeNode Text="积极分子" NavigateUrl="~/Tjbb/Jjfz.aspx" Icon="User"/>
+    <TreeNode Text="发展对象" NavigateUrl="~/Tjbb/Fzdx.aspx" Icon="UserGreen"/>
+    <TreeNode Text="预备党员" NavigateUrl="~/Tjbb/Ybdy.aspx" Icon="UserOrange"/>
+    <TreeNode Text="正式党员" NavigateUrl="~/Tjbb/Zsdy.aspx" Icon="UserBrown"/>
+    <TreeNode Text="按发展阶段" NavigateUrl="~/Tjbb/Fzjd.aspx" Icon="ChartPie"/>
+  </TreeNode>
+  <TreeNode Text="系统管理" Icon="Cog">
+    <TreeNode Text="数据导入" Icon="DatabaseGo">
+      <TreeNode Text="党校培训" NavigateUrl="~/Xmdr/Dxpxcx.aspx" Icon="PageWhiteMedal"/>
+      <TreeNode Text="学习成绩" NavigateUrl="~/Xmdr/Xxcjcx.aspx" Icon="PageWhiteRuby"/>
+      <TreeNode Text="积极分子名单" NavigateUrl="~/Xmdr/Jjfzmdcx.aspx" Icon="User"/>
+      <TreeNode Text="拟发展名单" NavigateUrl="~/Xmdr/Nfzmdcx.aspx" Icon="UserGreen"/>
+      <TreeNode Text="发展名单" NavigateUrl="~/Xmdr/Fzmdcx.aspx" Icon="UserOrange"/>
+      <TreeNode Text="转正名单" NavigateUrl="~/Xmdr/Zzmdcx.aspx" Icon="UserBrown"/>
+      <TreeNode Text="现有党员名单" NavigateUrl="~/Xmdr/Dymdcx.aspx" Icon="UserGray"/>
+    </TreeNode>
+    <TreeNode Text="资料管理" Icon="DatabaseGear">
+      <TreeNode Text="党支部" NavigateUrl="~/Jcgl/Dzb.aspx" Icon="PageWhiteCup"/>
+      <TreeNode Text="专业" NavigateUrl="~/Jcgl/Zy.aspx" Icon="PageWhiteCdr"/>
+      <TreeNode Text="班级" NavigateUrl="~/Jcgl/Bj.aspx" Icon="PageWhiteC"/>
+      <TreeNode Text="联系人" NavigateUrl="~/Jcgl/Lxr.aspx" Icon="UserSuit"/>
+    </TreeNode>
+    <TreeNode Text="指标管理" Icon="DatabaseAdd">
+      <TreeNode Text="项目指标" NavigateUrl="~/Jcgl/Xmzb.aspx" Icon="PageWhiteMedal"/>
+      <TreeNode Text="项目等级" NavigateUrl="~/Jcgl/Xmdj.aspx" Icon="PageWhiteTux"/>
+    </TreeNode>
+  </TreeNode>
+</Tree>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26FCF2ED-3C32-4ADC-83A5-650D476F2FD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account_user.cs" />
+    <Compile Include="Account\V_account_college.cs" />
+    <Compile Include="Account\V_account_userteacher.cs" />
+    <Compile Include="Dmgl\Dm_fzzt.cs" />
+    <Compile Include="Dmgl\Dm_jgzt.cs" />
+    <Compile Include="Dmgl\Dm_khzt.cs" />
+    <Compile Include="Dmgl\Dm_xb.cs" />
+    <Compile Include="Dmgl\jd_khzb.cs" />
+    <Compile Include="Dmgl\jd_xmdj.cs" />
+    <Compile Include="Dmgl\V_jd_xmdj.cs" />
+    <Compile Include="Jcgl\Jd_zy.cs" />
+    <Compile Include="Jcgl\V_jc_lxr.cs" />
+    <Compile Include="Jcgl\Jc_lxr.cs" />
+    <Compile Include="Jcgl\Jc_xs.cs" />
+    <Compile Include="Jcgl\V_jc_xs.cs" />
+    <Compile Include="Jcgl\V_jd_bj.cs" />
+    <Compile Include="Jcgl\Jd_bj.cs" />
+    <Compile Include="Jcgl\Jd_bm.cs" />
+    <Compile Include="Jcgl\Jd_dzb.cs" />
+    <Compile Include="Jcgl\V_jc_xs_hz.cs" />
+    <Compile Include="Jcgl\V_jd_dzb.cs" />
+    <Compile Include="Jcgl\V_jd_zy.cs" />
+    <Compile Include="Lcgl\Lc_dymd.cs" />
+    <Compile Include="Lcgl\Lc_fzmd.cs" />
+    <Compile Include="Lcgl\Lc_jjfzmd.cs" />
+    <Compile Include="Lcgl\Lc_nfzmd.cs" />
+    <Compile Include="Lcgl\Lc_zzmd.cs" />
+    <Compile Include="Lcgl\V_lc_jjfzmd.cs" />
+    <Compile Include="Lcgl\V_lc_nfzmd.cs" />
+    <Compile Include="Lcgl\V_lc_fzmd.cs" />
+    <Compile Include="Lcgl\V_lc_zzmd.cs" />
+    <Compile Include="Lcgl\V_lc_dymd.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tjbb\Tj_hz_fzdx.cs" />
+    <Compile Include="Tjbb\Tj_hz_zsdy.cs" />
+    <Compile Include="Tjbb\Tj_hz_ybdy.cs" />
+    <Compile Include="Xmgl\V_xm_sxhb.cs" />
+    <Compile Include="Xmgl\V_xm_sxhbmx_cur.cs" />
+    <Compile Include="Xmgl\V_yj_xm.cs" />
+    <Compile Include="Xmgl\Xm_sxhb.cs" />
+    <Compile Include="Xmgl\Xm_sxhbmx.cs" />
+    <Compile Include="Xmgl\Xm_sxhbtx.cs" />
+    <Compile Include="Xmgl\V_xm_sxhbtx.cs" />
+    <Compile Include="Xmgl\xm_ysdb.cs" />
+    <Compile Include="Xmgl\yj_xm.cs" />
+    <Compile Include="Xmgl\yj_xmzm.cs" />
+    <Compile Include="Xmgl\V_xm_sxhb_cur.cs" />
+    <Compile Include="Xmgl\V_yj_xm_cur.cs" />
+    <Compile Include="Xmgl\V_xm_ysdb.cs" />
+    <Compile Include="Xtgl\Xt_dxfs.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

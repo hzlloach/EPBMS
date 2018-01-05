@@ -1,0 +1,16 @@
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\bin\Debug\TStar.Utility.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\bin\Debug\TStar.Utility.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\obj\Debug\TStar.Utility.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\obj\Debug\TStar.Utility.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\bin\Debug\NPOI.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\bin\Debug\O2S.Components.PDFRender4NET.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\bin\Debug\TStar.Utility.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\bin\Debug\TStar.Utility.pdb
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\bin\Debug\NPOI.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\bin\Debug\O2S.Components.PDFRender4NET.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Out\TStar.Utility.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Out\TStar.Utility.pdb
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\obj\Debug\TStar.Utility.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\obj\Debug\TStar.Utility.pdb
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache

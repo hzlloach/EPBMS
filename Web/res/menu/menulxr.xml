@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>  
+  <TreeNode Text="项目审核" Icon="ApplicationForm">
+    <TreeNode Text="基本项目">
+      <TreeNode Text="思想汇报" NavigateUrl="~/Xmgl/SxhbSh.aspx"/>
+      <!--<TreeNode Text="志愿服务" NavigateUrl="~/Xmgl/ZyfwSh.aspx"/>
+      <TreeNode Text="三联系" NavigateUrl="~/Xmgl/SlxSh.aspx"/>
+    </TreeNode>
+    <TreeNode Text="拓展项目">
+      <TreeNode Text="竞赛获奖" NavigateUrl="~/Xmgl/JshjSh.aspx"/>
+      <TreeNode Text="其他项目" NavigateUrl="~/Xmgl/XmsbSh.aspx"/>-->
+    </TreeNode>
+  </TreeNode>
+  <TreeNode Text="发展管理" Icon="ApplicationForm">
+    <TreeNode Text="积极分子" NavigateUrl="~/Fzgl/Jjfzlb.aspx"/>
+    <TreeNode Text="发展对象" NavigateUrl="~/Fzgl/Fzdxlb.aspx"/>
+    <TreeNode Text="预备党员" NavigateUrl="~/Fzgl/Ybdylb.aspx"/>
+    <TreeNode Text="正式党员" NavigateUrl="~/Fzgl/Zsdylb.aspx"/>
+  </TreeNode>
+  <!--<TreeNode Text="查询汇总" Icon="ApplicationForm">
+    <TreeNode Text="项目查询" NavigateUrl="~/Xmgl/Xmcx.aspx"/>
+    <TreeNode Text="个人查询" NavigateUrl="~/Xmgl/Grcx.aspx"/>
+  </TreeNode>-->
+  <TreeNode Text="统计报表" Icon="ApplicationForm">
+    <TreeNode Text="按发展阶段" NavigateUrl="~/Tjbb/Fzjd.aspx"/>
+    <!--<TreeNode Text="按项目类别" NavigateUrl="~/Tjbb/Xmlb.aspx"/>-->
+  </TreeNode>
+</Tree>

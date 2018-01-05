@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>  
+  <TreeNode Text="【1+X】申报" Icon="BookRed">
+    <TreeNode Text="思想汇报" NavigateUrl="~/Xmgl/Sxhb.aspx" Icon="PageWhiteAcrobat"/>
+    <TreeNode Text="志愿服务" NavigateUrl="~/Xmgl/Zyfw.aspx" Icon="Heart"/>
+    <TreeNode Text="党员三联系" NavigateUrl="~/Xmgl/Slx.aspx" Icon="TelephoneRed"/>
+    <TreeNode Text="作用发挥" Icon="FlagRed">
+      <TreeNode Text="竞赛获奖" NavigateUrl="~/Xmgl/Jshj.aspx" Icon="MedalGold1"/>
+      <TreeNode Text="其他项目" NavigateUrl="~/Xmgl/Xmsb.aspx" Icon="AwardStarGold1"/>
+    </TreeNode>
+  </TreeNode>
+  <!--<TreeNode Text="查询汇总" Icon="ApplicationForm">
+    <TreeNode Text="个人情况" NavigateUrl="~/Xmgl/Grqk.aspx"/>
+    <TreeNode Text="项目查询" NavigateUrl="~/Xmgl/Hjqk.aspx"/>
+  </TreeNode>-->
+</Tree>

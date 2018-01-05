@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <TreeNode Text="【1+X】查询" Icon="BookMagnify">
+    <TreeNode Text="基本信息" NavigateUrl="~/Fzgl/Xslb.aspx" Icon="UserRed"/>
+    <TreeNode Text="思想汇报" NavigateUrl="~/Xmgl/Sxhblb.aspx" Icon="PageWhiteAcrobat"/>
+    <TreeNode Text="志愿服务" NavigateUrl="~/Xmgl/Zyfwlb.aspx" Icon="Heart"/>
+    <TreeNode Text="预审答辩" NavigateUrl="~/Xmgl/Ysdblb.aspx" Icon="ClockRed"/>
+    <TreeNode Text="党员三联系" NavigateUrl="~/Xmgl/Slxlb.aspx" Icon="TelephoneRed"/>
+    <TreeNode Text="作用发挥" Icon="FlagRed">
+      <TreeNode Text="竞赛获奖" NavigateUrl="~/Xmgl/Jshjlb.aspx" Icon="MedalGold1"/>
+      <TreeNode Text="其他项目" NavigateUrl="~/Xmgl/Xmsblb.aspx" Icon="AwardStarGold1"/>
+    </TreeNode>
+  </TreeNode>
+  <TreeNode Text="统计汇总" Icon="ChartBar">
+    <TreeNode Text="总表" NavigateUrl="~/Tjbb/Zb.aspx" Icon="Calendar"/>
+    <TreeNode Text="积极分子" NavigateUrl="~/Tjbb/Jjfz.aspx" Icon="User"/>
+    <TreeNode Text="发展对象" NavigateUrl="~/Tjbb/Fzdx.aspx" Icon="UserGreen"/>
+    <TreeNode Text="预备党员" NavigateUrl="~/Tjbb/Ybdy.aspx" Icon="UserOrange"/>
+    <TreeNode Text="正式党员" NavigateUrl="~/Tjbb/Zsdy.aspx" Icon="UserBrown"/>
+    <TreeNode Text="按发展阶段" NavigateUrl="~/Tjbb/Fzjd.aspx" Icon="ChartPie"/>
+    <!--<TreeNode Text="按项目分类" NavigateUrl="~/Tjbb/Xmlb.aspx"/>-->
+  </TreeNode>
+</Tree>

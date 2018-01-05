@@ -1,0 +1,17 @@
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\obj\Debug\DataSourceUtil.csprojResolveAssemblyReference.cache
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\Maticsoft.DBUtility.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\TStar.Utility.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\NPOI.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\O2S.Components.PDFRender4NET.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\TStar.Utility.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\TStar.Utility.DataSource.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\bin\Debug\TStar.Utility.DataSource.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\obj\Debug\TStar.Utility.DataSource.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\DataSourceUtil\obj\Debug\TStar.Utility.DataSource.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Out\TStar.Utility.DataSource.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Utility\Out\TStar.Utility.DataSource.pdb
+D:\Dev\201707党建\开发\EPBMS\Utility\Out\TStar.Utility.DataSource.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Out\TStar.Utility.DataSource.pdb
+D:\Dev\201707党建\开发\EPBMS\Utility\DataSourceUtil\obj\Debug\DataSourceUtil.csprojResolveAssemblyReference.cache
+D:\Dev\201707党建\开发\EPBMS\Utility\DataSourceUtil\obj\Debug\TStar.Utility.DataSource.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\DataSourceUtil\obj\Debug\TStar.Utility.DataSource.pdb

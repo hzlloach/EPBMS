@@ -1,0 +1,5 @@
+D:\Dev\201707党建\开发\EPBMS\Utility\Out\TStar.Utility.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Out\TStar.Utility.pdb
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\obj\Release\Utility.csprojResolveAssemblyReference.cache
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\obj\Release\TStar.Utility.dll
+D:\Dev\201707党建\开发\EPBMS\Utility\Utility\obj\Release\TStar.Utility.pdb

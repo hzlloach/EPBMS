@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA47D204-1D79-4F69-B83D-C0A7FA7481D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FineUI">
+      <HintPath>..\DLL\FineUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\DLL\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="TStar.Utility.DataSource">
+      <HintPath>..\DLL\TStar.Utility.DataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="TStar.Utility.FineUI">
+      <HintPath>..\Utility\Out\TStar.Utility.FineUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account.cs" />
+    <Compile Include="Dmgl\Dmgl.cs" />
+    <Compile Include="Fzgl\Lc_nfzmd.cs" />
+    <Compile Include="Fzgl\Lc_jjfzmd.cs" />
+    <Compile Include="Fzgl\Lc_fzmd.cs" />
+    <Compile Include="Fzgl\Lc_zzmd.cs" />
+    <Compile Include="Fzgl\Lc_dymd.cs" />
+    <Compile Include="Global\Base.cs" />
+    <Compile Include="Global\Globals.cs" />
+    <Compile Include="Global\Paged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global\SystemCode.cs" />
+    <Compile Include="Global\SystemSetting.cs" />
+    <Compile Include="Jcgl\Jc_lxr.cs" />
+    <Compile Include="Jcgl\Jc_xs.cs" />
+    <Compile Include="Jcgl\Jd_bj.cs" />
+    <Compile Include="Jcgl\Jd_dzb.cs" />
+    <Compile Include="Jcgl\Jd_zy.cs" />
+    <Compile Include="Jcgl\Jd_khzb.cs" />
+    <Compile Include="Jcgl\Jd_xmdj.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WSSmsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Fzjd.cs" />
+    <Compile Include="Tjbb\Zk.cs" />
+    <Compile Include="Xmgl\Xm_sxhb.cs" />
+    <Compile Include="Xmgl\Yj_xm.cs" />
+    <Compile Include="Xmgl\Yj_xmzm.cs" />
+    <Compile Include="Xmgl\Xm_ysdb.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\MyPDF\PDFHelper\PDFHelper.csproj">
+      <Project>{74bb82ca-f30e-423e-a734-66b42b98c03b}</Project>
+      <Name>PDFHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c7581ba9-ec19-427d-b018-74dd5c0cd0f7}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{3ec9d496-20a9-4fb5-906a-d4d9380dd02c}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{26fcf2ed-3c32-4adc-83a5-650d476f2fd7}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility\Utility.csproj">
+      <Project>{215f937d-5e24-46f1-8215-00c4f92998c1}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\WSSmsService\BLL.WSSmsService.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSSmsService\BLL.WSSmsService.SendMsg2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSSmsService\BLL.WSSmsService.SendMsgResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSSmsService\smsservice.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WSSmsService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSSmsService\smsservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSSmsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSSmsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSSmsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

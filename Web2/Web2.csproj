@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35AB0FCA-99E3-41A9-8418-A99B54236D8A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>TStar.Epbms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FineUI">
+      <HintPath>..\lib\FineUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.4.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TStar.Utility.DataSource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\Out\TStar.Utility.DataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="TStar.Utility.FineUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\Out\TStar.Utility.FineUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fzgl\Jjfzlb.aspx" />
+    <Content Include="Fzgl\SelDzb.aspx" />
+    <Content Include="Fzgl\ShowFzlc.aspx" />
+    <Content Include="Fzgl\XsEdit.aspx" />
+    <Content Include="Fzgl\Xslb.aspx" />
+    <Content Include="Home\Homelxr.aspx" />
+    <Content Include="Home\Homexs.aspx" />
+    <Content Include="Home\Homezb.aspx" />
+    <Content Include="Home\Homexdw.aspx" />
+    <Content Include="Home\Homefdw.aspx" />
+    <Content Include="Jcgl\Dzb.aspx" />
+    <Content Include="Jcgl\DzbEdit.aspx" />
+    <Content Include="Jcgl\Dzbdr.aspx" />
+    <Content Include="Jcgl\Zy.aspx" />
+    <Content Include="Jcgl\ZyEdit.aspx" />
+    <Content Include="Jcgl\Zydr.aspx" />
+    <Content Include="Jcgl\Bjdr.aspx" />
+    <Content Include="Jcgl\Lxr.aspx" />
+    <Content Include="Jcgl\LxrEdit.aspx" />
+    <Content Include="Jcgl\Lxrdr.aspx" />
+    <Content Include="Jcgl\DzbyhEdit.aspx" />
+    <Content Include="Jcgl\Xmzb.aspx" />
+    <Content Include="Jcgl\XmzbEdit.aspx" />
+    <Content Include="Jcgl\Xmdj.aspx" />
+    <Content Include="Jcgl\XmdjEdit.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="Tjbb\Fzjd.aspx" />
+    <Content Include="Tjbb\Jjfz.aspx" />
+    <Content Include="Tjbb\Zb.aspx" />
+    <Content Include="Tjbb\Xmlb.aspx" />
+    <Content Include="Tjbb\Xylb.aspx" />
+    <Content Include="Tjbb\Zblb.aspx" />
+    <Content Include="Tjbb\Zblxr.aspx" />
+    <Content Include="Tjbb\Fzdx.aspx" />
+    <Content Include="Tjbb\Ybdy.aspx" />
+    <Content Include="Tjbb\Zsdy.aspx" />
+    <Content Include="Tjbb\Zbfdw.aspx" />
+    <Content Include="Xmdr\Dymdcx.aspx" />
+    <Content Include="Xmgl\ShowYsdb.aspx" />
+    <Content Include="Xmgl\ShowAttach.aspx" />
+    <Content Include="Xmgl\Sxhblbgr.aspx" />
+    <Content Include="Fzgl\Ybdylb.aspx" />
+    <Content Include="Fzgl\Zsdylb.aspx" />
+    <Content Include="Fzgl\Fzdxlb.aspx" />
+    <Content Include="res\css\extjs.css" />
+    <Content Include="res\images\logo\Logo.png" />
+    <Content Include="res\js\JScript.js" />
+    <Content Include="Xmdr\Dxpxcx.aspx" />
+    <Content Include="Xmdr\Dxpxdr.aspx" />
+    <Content Include="Xmdr\mddr.aspx" />
+    <Content Include="Xmdr\Nfzmdcx.aspx" />
+    <Content Include="Xmdr\Jjfzmdcx.aspx" />
+    <Content Include="Xmdr\Fzmdcx.aspx" />
+    <Content Include="Xmdr\Xmdr.aspx" />
+    <Content Include="Xmdr\Zzmdcx.aspx" />
+    <Content Include="Xmdr\Xxcjcx.aspx" />
+    <Content Include="Xmdr\Xxcjdr.aspx" />
+    <Content Include="Xmgl\Zyfw.aspx" />
+    <Content Include="Xmgl\ZyfwEdit.aspx" />
+    <Content Include="Xmgl\Jshj.aspx" />
+    <Content Include="Xmgl\JshjEdit.aspx" />
+    <Content Include="Xmgl\Slx.aspx" />
+    <Content Include="Xmgl\SlxEdit.aspx" />
+    <Content Include="Xmgl\SxhbSh.aspx" />
+    <Content Include="Xmgl\SxhbShEdit.aspx" />
+    <Content Include="Xmgl\SxhbShView.aspx" />
+    <Content Include="Xmgl\Jshjlbgr.aspx" />
+    <Content Include="Xmgl\Slxlbgr.aspx" />
+    <Content Include="Xtgl\Download.aspx" />
+    <Content Include="Xtgl\Export.aspx" />
+    <Content Include="Xtgl\Reg.aspx" />
+    <Content Include="Xmgl\SxhbView.aspx" />
+    <Content Include="Xmgl\Zyfwlbgr.aspx" />
+    <Content Include="Xmgl\ZyfwView.aspx" />
+    <Content Include="Xmgl\Ysdblb.aspx" />
+    <Content Include="Xmgl\Zyfwlb.aspx" />
+    <Content Include="Xmgl\ShEdit.aspx" />
+    <Content Include="Xmgl\Sxhblb.aspx" />
+    <Content Include="Xmgl\Slxlb.aspx" />
+    <Content Include="Xmgl\SlxView.aspx" />
+    <Content Include="Xmgl\Jshjlb.aspx" />
+    <Content Include="Xmgl\JshjView.aspx" />
+    <Content Include="Xmgl\Xmsblb.aspx" />
+    <Content Include="Xmgl\XmsbView.aspx" />
+    <Content Include="Xtgl\FileUpload.aspx" />
+    <Content Include="Frame.aspx" />
+    <Content Include="Jcgl\Bj.aspx" />
+    <Content Include="Jcgl\BjEdit.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="res\css\common.css" />
+    <Content Include="res\css\default.css" />
+    <Content Include="res\css\fineui.css" />
+    <Content Include="res\css\index.css" />
+    <Content Include="res\css\table.css" />
+    <Content Include="res\images\nophoto.png" />
+    <Content Include="res\js\jquery.js" />
+    <Content Include="res\js\jquery.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Xmgl\XmsbEdit.aspx" />
+    <Content Include="Xmgl\SxhbEdit.aspx" />
+    <Content Include="Xmgl\Sxhb.aspx" />
+    <Content Include="Xmgl\Xmsb.aspx" />
+    <Content Include="Xtgl\Forget.aspx" />
+    <Content Include="Xtgl\UserInfo.aspx" />
+    <Content Include="Xtgl\UpdatePwd.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="captcha\captcha.ashx.cs">
+      <DependentUpon>captcha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="captcha\CaptchaImage.cs" />
+    <Compile Include="Fzgl\Jjfzlb.aspx.cs">
+      <DependentUpon>Jjfzlb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\Jjfzlb.aspx.designer.cs">
+      <DependentUpon>Jjfzlb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\SelDzb.aspx.cs">
+      <DependentUpon>SelDzb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\SelDzb.aspx.designer.cs">
+      <DependentUpon>SelDzb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\ShowFzlc.aspx.cs">
+      <DependentUpon>ShowFzlc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\ShowFzlc.aspx.designer.cs">
+      <DependentUpon>ShowFzlc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\XsEdit.aspx.cs">
+      <DependentUpon>XsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\XsEdit.aspx.designer.cs">
+      <DependentUpon>XsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\Xslb.aspx.cs">
+      <DependentUpon>Xslb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\Xslb.aspx.designer.cs">
+      <DependentUpon>Xslb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Homelxr.aspx.cs">
+      <DependentUpon>Homelxr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Homelxr.aspx.designer.cs">
+      <DependentUpon>Homelxr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Homexs.aspx.cs">
+      <DependentUpon>Homexs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Homexs.aspx.designer.cs">
+      <DependentUpon>Homexs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Homezb.aspx.cs">
+      <DependentUpon>Homezb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Homezb.aspx.designer.cs">
+      <DependentUpon>Homezb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Homexdw.aspx.cs">
+      <DependentUpon>Homexdw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Homexdw.aspx.designer.cs">
+      <DependentUpon>Homexdw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Homefdw.aspx.cs">
+      <DependentUpon>Homefdw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Homefdw.aspx.designer.cs">
+      <DependentUpon>Homefdw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Dzb.aspx.cs">
+      <DependentUpon>Dzb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Dzb.aspx.designer.cs">
+      <DependentUpon>Dzb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\DzbEdit.aspx.cs">
+      <DependentUpon>DzbEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\DzbEdit.aspx.designer.cs">
+      <DependentUpon>DzbEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Dzbdr.aspx.cs">
+      <DependentUpon>Dzbdr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Dzbdr.aspx.designer.cs">
+      <DependentUpon>Dzbdr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Zy.aspx.cs">
+      <DependentUpon>Zy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Zy.aspx.designer.cs">
+      <DependentUpon>Zy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\ZyEdit.aspx.cs">
+      <DependentUpon>ZyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\ZyEdit.aspx.designer.cs">
+      <DependentUpon>ZyEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Zydr.aspx.cs">
+      <DependentUpon>Zydr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Zydr.aspx.designer.cs">
+      <DependentUpon>Zydr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Bjdr.aspx.cs">
+      <DependentUpon>Bjdr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Bjdr.aspx.designer.cs">
+      <DependentUpon>Bjdr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Lxr.aspx.cs">
+      <DependentUpon>Lxr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Lxr.aspx.designer.cs">
+      <DependentUpon>Lxr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\LxrEdit.aspx.cs">
+      <DependentUpon>LxrEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\LxrEdit.aspx.designer.cs">
+      <DependentUpon>LxrEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Lxrdr.aspx.cs">
+      <DependentUpon>Lxrdr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Lxrdr.aspx.designer.cs">
+      <DependentUpon>Lxrdr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\DzbyhEdit.aspx.cs">
+      <DependentUpon>DzbyhEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\DzbyhEdit.aspx.designer.cs">
+      <DependentUpon>DzbyhEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Xmzb.aspx.cs">
+      <DependentUpon>Xmzb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Xmzb.aspx.designer.cs">
+      <DependentUpon>Xmzb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\XmzbEdit.aspx.cs">
+      <DependentUpon>XmzbEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\XmzbEdit.aspx.designer.cs">
+      <DependentUpon>XmzbEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Xmdj.aspx.cs">
+      <DependentUpon>Xmdj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Xmdj.aspx.designer.cs">
+      <DependentUpon>Xmdj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\XmdjEdit.aspx.cs">
+      <DependentUpon>XmdjEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\XmdjEdit.aspx.designer.cs">
+      <DependentUpon>XmdjEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Fzjd.aspx.cs">
+      <DependentUpon>Fzjd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Fzjd.aspx.designer.cs">
+      <DependentUpon>Fzjd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Jjfz.aspx.cs">
+      <DependentUpon>Jjfz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Jjfz.aspx.designer.cs">
+      <DependentUpon>Jjfz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Zb.aspx.cs">
+      <DependentUpon>Zb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Zb.aspx.designer.cs">
+      <DependentUpon>Zb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Xmlb.aspx.cs">
+      <DependentUpon>Xmlb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Xmlb.aspx.designer.cs">
+      <DependentUpon>Xmlb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Xylb.aspx.cs">
+      <DependentUpon>Xylb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Xylb.aspx.designer.cs">
+      <DependentUpon>Xylb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Zblb.aspx.cs">
+      <DependentUpon>Zblb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Zblb.aspx.designer.cs">
+      <DependentUpon>Zblb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Zblxr.aspx.cs">
+      <DependentUpon>Zblxr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Zblxr.aspx.designer.cs">
+      <DependentUpon>Zblxr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Fzdx.aspx.cs">
+      <DependentUpon>Fzdx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Fzdx.aspx.designer.cs">
+      <DependentUpon>Fzdx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Ybdy.aspx.cs">
+      <DependentUpon>Ybdy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Ybdy.aspx.designer.cs">
+      <DependentUpon>Ybdy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Zsdy.aspx.cs">
+      <DependentUpon>Zsdy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Zsdy.aspx.designer.cs">
+      <DependentUpon>Zsdy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tjbb\Zbfdw.aspx.cs">
+      <DependentUpon>Zbfdw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tjbb\Zbfdw.aspx.designer.cs">
+      <DependentUpon>Zbfdw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Dymdcx.aspx.cs">
+      <DependentUpon>Dymdcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Dymdcx.aspx.designer.cs">
+      <DependentUpon>Dymdcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\ShowYsdb.aspx.cs">
+      <DependentUpon>ShowYsdb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\ShowYsdb.aspx.designer.cs">
+      <DependentUpon>ShowYsdb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\ShowAttach.aspx.cs">
+      <DependentUpon>ShowAttach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\ShowAttach.aspx.designer.cs">
+      <DependentUpon>ShowAttach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Sxhblbgr.aspx.cs">
+      <DependentUpon>Sxhblbgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Sxhblbgr.aspx.designer.cs">
+      <DependentUpon>Sxhblbgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\Ybdylb.aspx.cs">
+      <DependentUpon>Ybdylb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\Ybdylb.aspx.designer.cs">
+      <DependentUpon>Ybdylb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\Zsdylb.aspx.cs">
+      <DependentUpon>Zsdylb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\Zsdylb.aspx.designer.cs">
+      <DependentUpon>Zsdylb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fzgl\Fzdxlb.aspx.cs">
+      <DependentUpon>Fzdxlb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fzgl\Fzdxlb.aspx.designer.cs">
+      <DependentUpon>Fzdxlb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Dxpxcx.aspx.cs">
+      <DependentUpon>Dxpxcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Dxpxcx.aspx.designer.cs">
+      <DependentUpon>Dxpxcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Dxpxdr.aspx.cs">
+      <DependentUpon>Dxpxdr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Dxpxdr.aspx.designer.cs">
+      <DependentUpon>Dxpxdr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\mddr.aspx.cs">
+      <DependentUpon>mddr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\mddr.aspx.designer.cs">
+      <DependentUpon>mddr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Nfzmdcx.aspx.cs">
+      <DependentUpon>Nfzmdcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Nfzmdcx.aspx.designer.cs">
+      <DependentUpon>Nfzmdcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Jjfzmdcx.aspx.cs">
+      <DependentUpon>Jjfzmdcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Jjfzmdcx.aspx.designer.cs">
+      <DependentUpon>Jjfzmdcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Fzmdcx.aspx.cs">
+      <DependentUpon>Fzmdcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Fzmdcx.aspx.designer.cs">
+      <DependentUpon>Fzmdcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Xmdr.aspx.cs">
+      <DependentUpon>Xmdr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Xmdr.aspx.designer.cs">
+      <DependentUpon>Xmdr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Zzmdcx.aspx.cs">
+      <DependentUpon>Zzmdcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Zzmdcx.aspx.designer.cs">
+      <DependentUpon>Zzmdcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Xxcjcx.aspx.cs">
+      <DependentUpon>Xxcjcx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Xxcjcx.aspx.designer.cs">
+      <DependentUpon>Xxcjcx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmdr\Xxcjdr.aspx.cs">
+      <DependentUpon>Xxcjdr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmdr\Xxcjdr.aspx.designer.cs">
+      <DependentUpon>Xxcjdr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Zyfw.aspx.cs">
+      <DependentUpon>Zyfw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Zyfw.aspx.designer.cs">
+      <DependentUpon>Zyfw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\ZyfwEdit.aspx.cs">
+      <DependentUpon>ZyfwEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\ZyfwEdit.aspx.designer.cs">
+      <DependentUpon>ZyfwEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Jshj.aspx.cs">
+      <DependentUpon>Jshj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Jshj.aspx.designer.cs">
+      <DependentUpon>Jshj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\JshjEdit.aspx.cs">
+      <DependentUpon>JshjEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\JshjEdit.aspx.designer.cs">
+      <DependentUpon>JshjEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Slx.aspx.cs">
+      <DependentUpon>Slx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Slx.aspx.designer.cs">
+      <DependentUpon>Slx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SlxEdit.aspx.cs">
+      <DependentUpon>SlxEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SlxEdit.aspx.designer.cs">
+      <DependentUpon>SlxEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SxhbSh.aspx.cs">
+      <DependentUpon>SxhbSh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SxhbSh.aspx.designer.cs">
+      <DependentUpon>SxhbSh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SxhbShEdit.aspx.cs">
+      <DependentUpon>SxhbShEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SxhbShEdit.aspx.designer.cs">
+      <DependentUpon>SxhbShEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SxhbShView.aspx.cs">
+      <DependentUpon>SxhbShView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SxhbShView.aspx.designer.cs">
+      <DependentUpon>SxhbShView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Jshjlbgr.aspx.cs">
+      <DependentUpon>Jshjlbgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Jshjlbgr.aspx.designer.cs">
+      <DependentUpon>Jshjlbgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Slxlbgr.aspx.cs">
+      <DependentUpon>Slxlbgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Slxlbgr.aspx.designer.cs">
+      <DependentUpon>Slxlbgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\Export.aspx.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\Export.aspx.designer.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\Reg.aspx.cs">
+      <DependentUpon>Reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\Reg.aspx.designer.cs">
+      <DependentUpon>Reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SxhbView.aspx.cs">
+      <DependentUpon>SxhbView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SxhbView.aspx.designer.cs">
+      <DependentUpon>SxhbView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Zyfwlbgr.aspx.cs">
+      <DependentUpon>Zyfwlbgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Zyfwlbgr.aspx.designer.cs">
+      <DependentUpon>Zyfwlbgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\ZyfwView.aspx.cs">
+      <DependentUpon>ZyfwView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\ZyfwView.aspx.designer.cs">
+      <DependentUpon>ZyfwView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Ysdblb.aspx.cs">
+      <DependentUpon>Ysdblb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Ysdblb.aspx.designer.cs">
+      <DependentUpon>Ysdblb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Zyfwlb.aspx.cs">
+      <DependentUpon>Zyfwlb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Zyfwlb.aspx.designer.cs">
+      <DependentUpon>Zyfwlb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\ShEdit.aspx.cs">
+      <DependentUpon>ShEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\ShEdit.aspx.designer.cs">
+      <DependentUpon>ShEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Sxhblb.aspx.cs">
+      <DependentUpon>Sxhblb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Sxhblb.aspx.designer.cs">
+      <DependentUpon>Sxhblb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Slxlb.aspx.cs">
+      <DependentUpon>Slxlb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Slxlb.aspx.designer.cs">
+      <DependentUpon>Slxlb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SlxView.aspx.cs">
+      <DependentUpon>SlxView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SlxView.aspx.designer.cs">
+      <DependentUpon>SlxView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Jshjlb.aspx.cs">
+      <DependentUpon>Jshjlb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Jshjlb.aspx.designer.cs">
+      <DependentUpon>Jshjlb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\JshjView.aspx.cs">
+      <DependentUpon>JshjView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\JshjView.aspx.designer.cs">
+      <DependentUpon>JshjView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Xmsblb.aspx.cs">
+      <DependentUpon>Xmsblb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Xmsblb.aspx.designer.cs">
+      <DependentUpon>Xmsblb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\XmsbView.aspx.cs">
+      <DependentUpon>XmsbView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\XmsbView.aspx.designer.cs">
+      <DependentUpon>XmsbView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\FileUpload.aspx.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\FileUpload.aspx.designer.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame.aspx.cs">
+      <DependentUpon>Frame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame.aspx.designer.cs">
+      <DependentUpon>Frame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\Bj.aspx.cs">
+      <DependentUpon>Bj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\Bj.aspx.designer.cs">
+      <DependentUpon>Bj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jcgl\BjEdit.aspx.cs">
+      <DependentUpon>BjEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jcgl\BjEdit.aspx.designer.cs">
+      <DependentUpon>BjEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xmgl\XmsbEdit.aspx.cs">
+      <DependentUpon>XmsbEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\XmsbEdit.aspx.designer.cs">
+      <DependentUpon>XmsbEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\SxhbEdit.aspx.cs">
+      <DependentUpon>SxhbEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\SxhbEdit.aspx.designer.cs">
+      <DependentUpon>SxhbEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Sxhb.aspx.cs">
+      <DependentUpon>Sxhb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Sxhb.aspx.designer.cs">
+      <DependentUpon>Sxhb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xmgl\Xmsb.aspx.cs">
+      <DependentUpon>Xmsb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xmgl\Xmsb.aspx.designer.cs">
+      <DependentUpon>Xmsb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\Forget.aspx.cs">
+      <DependentUpon>Forget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\Forget.aspx.designer.cs">
+      <DependentUpon>Forget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtgl\UpdatePwd.aspx.cs">
+      <DependentUpon>UpdatePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xtgl\UpdatePwd.aspx.designer.cs">
+      <DependentUpon>UpdatePwd.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="captcha\captcha.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ba47d204-1d79-4f69-b83d-c0a7fa7481d5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{3ec9d496-20a9-4fb5-906a-d4d9380dd02c}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{26fcf2ed-3c32-4adc-83a5-650d476f2fd7}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility\Utility.csproj">
+      <Project>{215f937d-5e24-46f1-8215-00c4f92998c1}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\GetServerTime.ashx" />
+    <Content Include="Handler\VerifyCode.ashx" />
+    <Content Include="Handler\VerifyOrder.ashx" />
+    <Content Include="Handler\VerifyPhone.ashx" />
+    <Content Include="Handler\VerifyTicket.ashx" />
+    <Content Include="Handler\VerifyUser.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>53353</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Web2</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿table.tblForm
+{ 
+    border:1px solid #e0e0e0; 
+    border-collapse:collapse;
+    background-color:#ffffff; 
+    width:100%; 
+    margin:1px;
+    font-family:宋体; 
+    font-size:12px;
+}
+.tblForm td.column 
+{ 
+    font-weight:normal; 
+    width:90px;
+    height:30px; 
+    text-align:right; 
+    padding-right:8px; 
+    background-color:#ebebeb; 
+    border:solid 1px #e0e0e0; 
+    color:#38609E;    
+}
+.tblForm td  
+{
+    height:30px; 
+    line-height:110%;
+    text-align:left; 
+    padding:5px 0px 5px 8px; 
+    border:solid 1px #e0e0e0;
+}

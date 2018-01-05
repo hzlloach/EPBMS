@@ -1,0 +1,13 @@
+E:\Work\Dev\20170618党建\开发\EmptyProject\Model\bin\Debug\Model.dll
+E:\Work\Dev\20170618党建\开发\EmptyProject\Model\bin\Debug\Model.pdb
+E:\Work\Dev\20170618党建\开发\EmptyProject\Model\obj\Debug\Model.dll
+E:\Work\Dev\20170618党建\开发\EmptyProject\Model\obj\Debug\Model.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Model\bin\Debug\Model.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Model\bin\Debug\Model.pdb
+D:\Dev\FineUIMvc\Examples\EmptyProject\Model\obj\Debug\Model.dll
+D:\Dev\FineUIMvc\Examples\EmptyProject\Model\obj\Debug\Model.pdb
+D:\Dev\201707党建\开发\EPBMS\Model\bin\Debug\Model.dll
+D:\Dev\201707党建\开发\EPBMS\Model\bin\Debug\Model.pdb
+D:\Dev\201707党建\开发\EPBMS\Model\obj\Debug\Model.dll
+D:\Dev\201707党建\开发\EPBMS\Model\obj\Debug\Model.pdb
+D:\Dev\201707党建\开发\EPBMS\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

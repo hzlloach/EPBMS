@@ -1,0 +1,78 @@
+﻿/*--------------------------------------------------
+    特殊的控件外观样式处理
+--------------------------------------------------*/
+
+.x-panel-header-default {
+    background-color: #830000!important;
+}
+
+/* 查询框无下边框 */
+/*.querypanel .x-panel-body {
+    border-bottom-width: 0 !important;
+}*/
+/* 结果框无上边框 */
+.gridpanel .x-toolbar {
+    border-top-width: 0 !important;
+}
+
+/* 下拉列表最多显示 6 行 */
+.x-list-plain {
+    max-height: 144px;
+}
+
+/* 标签栏文字颜色 */
+.x-form-display-field-default {
+    color: blue;
+}
+
+/* 标签栏文字颜色(只需为其添加CssClass即可) */
+/*.spanRed span:nth-child(3)*/ 
+.spanRed div span {
+    color: red;
+}
+.spanGreen div span {
+    color: green;
+}
+.spanBlue div span {
+    color: blue;
+}
+.spanMaroon div span {
+    color: maroon;
+}
+       
+/* 分组面板的标题 */
+.spanTitle {
+    color: maroon;
+    font-size:14px;
+    font-weight:bold;
+} 
+
+/* 多行文字 Maroon */
+.spanTextMaroon {
+    border:0px solid maroon;
+    margin-top:0px;
+    padding:5px;
+    color: #730000;
+    line-height:1.5; 
+}
+/* 多行文字 Blue */
+.spanTextBlueBig {
+    border:0px solid maroon;
+    margin-top:0px;
+    padding:5px;
+    color: blue;
+    font-size:15px;
+    line-height:1.5; 
+}
+/* 多行文字 Red */
+.spanTextRed {
+    border:0px solid maroon;
+    margin-top:0px;
+    padding:5px;
+    color: red;
+    line-height:1.5; 
+}
+.spanLink a {
+    cursor: pointer;
+    text-decoration: underline;
+}

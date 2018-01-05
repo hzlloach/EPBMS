@@ -1,0 +1,92 @@
+﻿#header {
+    background-color: #ff0000;
+}
+
+#header table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+#header table td {
+    padding: 0;
+}
+
+#header .logo,
+#header .homepage {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 40px;
+}
+
+#header .homepage {
+    padding: 8px 8px 8px 10px;
+    line-height: 24px;
+}
+
+#header .homepage img {
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+}
+
+#header .x-btn {
+    border-width: 0;
+    padding: 10px;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#header .x-btn-text.x-btn-icon-top > .x-btn-icon-el-default-small {
+    background-size: 22px 22px;
+    height: 22px;
+    margin-bottom: 2px;
+}
+
+#header .x-btn-text.x-btn-icon-left > .x-btn-icon-el-default-small {
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* 主题相关样式 - neptune */
+.f-theme-neptune #header,
+.f-theme-neptune .bottomtable,
+.f-theme-neptune .x-splitter {
+    background-color: #730000/*#1475BB*/;
+    color: #fff;
+}
+
+.f-theme-neptune #header a,
+.f-theme-neptune .bottomtable a {
+    color: #fff;
+}
+
+.f-theme-neptune #header .x-btn-inner-default-small {
+    font: bold 15px 宋体;
+}
+
+.f-theme-neptune #header .x-btn-over.x-btn-default-small {
+    background-color: #efdbdb;
+}
+
+.f-theme-neptune #header .x-btn-over .x-btn-inner-default-small {
+    color: #730000;
+}
+
+
+
+.isnew {
+    color: red;
+}
+
+.bottomtable {
+    width: 100%;
+    font-size: 12px;
+}
+
+

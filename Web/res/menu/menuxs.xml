@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>  
+  <TreeNode Text="项目申报" Icon="ApplicationForm">
+    <TreeNode Text="基本项目">
+      <TreeNode Text="思想汇报" NavigateUrl="~/Xmgl/Sxhb.aspx"/>
+      <TreeNode Text="志愿服务" NavigateUrl="~/Xmgl/Zyfw.aspx"/>
+      <TreeNode Text="三联系" NavigateUrl="~/Xmgl/Slx.aspx"/>
+    </TreeNode>
+    <TreeNode Text="拓展项目">
+      <TreeNode Text="竞赛获奖" NavigateUrl="~/Xmgl/Jshj.aspx"/>
+      <TreeNode Text="其他项目" NavigateUrl="~/Xmgl/Xmsb.aspx"/>
+    </TreeNode>
+  </TreeNode>
+  <!--<TreeNode Text="查询汇总" Icon="ApplicationForm">
+    <TreeNode Text="个人情况" NavigateUrl="~/Xmgl/Grqk.aspx"/>
+    <TreeNode Text="项目查询" NavigateUrl="~/Xmgl/Hjqk.aspx"/>
+  </TreeNode>-->
+</Tree>
